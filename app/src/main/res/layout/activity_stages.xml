@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.example.hrizi.find.stages">
+
+    <ImageButton
+        android:id="@+id/fbbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/black"
+        android:cropToPadding="false"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/find"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06"
+        app:srcCompat="@drawable/fb" />
+
+
+    <TextView
+        android:id="@+id/find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Find"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="81dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <ScrollView
+        android:layout_width="344dp"
+        android:layout_height="466dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/l1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/black"
+                android:cropToPadding="false"
+                android:maxHeight="120dp"
+                android:maxWidth="120dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/btnl1"
+                android:onClick="l1btnClick"/>
+
+            <ImageButton
+                android:id="@+id/l2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:maxHeight="120dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:background="@android:color/black"
+                android:cropToPadding="false"
+                app:srcCompat="@drawable/level1"
+                android:onClick="l2btnClick"/>
+
+            <ImageButton
+                android:id="@+id/l3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:maxHeight="120dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:background="@android:color/black"
+                android:cropToPadding="false"
+                app:srcCompat="@drawable/level1"
+                android:onClick="l3btnClick"/>
+
+            <ImageButton
+                android:id="@+id/l4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:maxHeight="120dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:background="@android:color/black"
+                android:cropToPadding="false"
+                app:srcCompat="@drawable/level1" />
+            <ImageButton
+                android:id="@+id/l5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:maxHeight="120dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:background="@android:color/black"
+                android:cropToPadding="false"
+                app:srcCompat="@drawable/level1" />
+            <ImageButton
+                android:id="@+id/l6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:maxHeight="120dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:background="@android:color/black"
+                android:cropToPadding="false"
+                app:srcCompat="@drawable/level1" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
